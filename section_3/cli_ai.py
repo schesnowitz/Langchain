@@ -5,7 +5,6 @@ os.environ["OPENAI_API_KEY"] = OAI_KEY
 os.environ["SERPAPI_API_KEY"] = SERP_API
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain
 from langchain.utilities import SerpAPIWrapper
 from langchain.agents import Tool, AgentType, initialize_agent
 from langchain.memory import ConversationBufferMemory
