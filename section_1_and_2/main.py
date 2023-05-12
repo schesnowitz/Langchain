@@ -23,8 +23,5 @@ chain = LLMChain(llm=lang_model, prompt=prompt_llm, verbose=True)
 
 # print(chain.run(input="what is todays date"))
 
-from langchain.utilities import SerpAPIWrapper
 
-search = SerpAPIWrapper()
-
-print(search.run("what is the largest dog breed?"))
+print(chain.run("what is the largest dog breed?"))
